@@ -1,5 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Muli&display-swap');
+
+$desktop: 768px;
 
 .container {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
+
+  .header {
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .main {
+    margin: 125px 0px 0;
+
+    > * {
+      text-transform: uppercase;
+    }
+
+    li {
+      font-size: 60px;
+      list-style-type: none;
+      margin-bottom: 36px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      
+      &:hover {
+        color: red;
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+.site-wrapper {
+  margin: 40px 20px;
+
+  @media (min-width: $desktop) { 
+    margin: 100px 100px;
+
+  }
 }
