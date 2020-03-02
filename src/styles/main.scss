@@ -1,29 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Muli&display-swap');
 
-$desktop: 768px;
+$tablet: 768px;
+$desktop: 1024px;
 
 .container {
   font-family: 'Helvetica', sans-serif;
+  position: relative;
 
-  .header {
+  .name {
 
-    .name {
+    &__text {
+      cursor: pointer;
       font-size: 24px;
       font-weight: bold;
+
+      &--desktop {
+        display: none;
+
+        @media (min-width: $tablet) { 
+          display: block;
+        }
+      }
+
+      &--mobile {
+        display: block;
+
+        @media (min-width: $tablet) { 
+          display: none;
+        }
+
+        span {
+          margin-top: 10px;
+        }
+      }
     }
   }
 
   .main {
-    margin: 125px 0px 0;
+    margin: 100px 0 0;
+    position: relative;
+    z-index: 5;
+    
+    @media (min-width: $tablet) { 
+      margin: 125px 0 0;
+    }
 
     > * {
       text-transform: uppercase;
     }
 
     li {
-      font-size: 60px;
+      font-size: 30px;
       list-style-type: none;
-      margin-bottom: 36px;
+      margin-bottom: 30px;
+      
+      @media (min-width: $tablet) { 
+        font-size: 60px;
+        margin-bottom: 36px;
+      }
     }
 
     a {
@@ -31,10 +65,42 @@ $desktop: 768px;
       text-decoration: none;
       
       &:hover {
-        color: red;
-        font-size: 55px;
+        font-size: 30px;
+        font-weight: bold;
+
+        @media (min-width: $tablet) { 
+          font-size: 55px;
+        }
       }
     }
+  }
+
+  .preview {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    margin-top: 100px;
+    padding-left: 400px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    
+    @media (min-width: $tablet) { 
+      display: flex;
+      padding-left: 300px;
+      min-height: 500px;
+    }
+
+    @media (min-width: $desktop) { 
+      padding-left: 400px;
+    }
+
+    &__image {
+      max-height: 500px;
+      object-fit: cover;
+    }
+
   }
 }
 
@@ -42,7 +108,7 @@ $desktop: 768px;
   margin: 40px 20px;
 
   @media (min-width: $desktop) { 
-    margin: 100px 100px;
+    margin: 100px 0 0 100px;
 
   }
 }

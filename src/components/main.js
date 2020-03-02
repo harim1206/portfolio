@@ -1,18 +1,22 @@
-import React from 'react'
-import Project from './project'
+import React from "react"
+import Project from "./project"
 
+const Main = props => {
+  let listItems = []
 
-const Main = (props) =>{
+  for (let project in props.projects) {
+    listItems.push(
+      <Project
+        href={props.projects[project].href}
+        title={props.projects[project].title}
+        project={project}
+        onEnter={props.onEnter}
+        onLeave={props.onLeave}
+      />
+    )
+  }
 
-  return (
-    <ul className="main ">
-      {
-        props.projects.map( project => {
-          return <Project href={project.href} title={project.title} />
-        })
-      }
-    </ul>
-  )
+  return <ul className="main">{listItems}</ul>
 }
 
-export default Main;
+export default Main
