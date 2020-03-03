@@ -41,7 +41,7 @@ export default {
   },
   resume: {
     title: "Resume",
-    href: "https://drive.google.com/file/d/1SdRH1QKfvYaV9ruFuq_8xV931XNrW5zr/view",
+    href: "https://drive.google.com/file/d/1sD-Oj2HHhkO1AOdsj5493JNRw9kNnEuR/view?usp=sharing",
     img: harimImg,
   }
 
