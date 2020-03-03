@@ -6,13 +6,15 @@ import Name from "../components/name"
 import Preview from "../components/preview"
 import "../styles/main.scss"
 
-import bbImg from '../assets/bollbranch.png'
-import ttImg from '../assets/tenpastten.png'
-import bttmImg from '../assets/baboontothemoon.png'
-import otdImg from '../assets/onthedash.png'
-import ttffImg from '../assets/thirtythreefourtyfive.png'
-import nwGif from '../assets/nw.gif'
-import harimImg from '../assets/harim.png'
+import {
+  bbImg,
+  ttImg,
+  bttmImg,
+  otdImg,
+  ttffImg,
+  nwGif,
+  harimImg
+} from '../assets/images'
 
 class IndexPage extends Component {
   
@@ -85,97 +87,3 @@ class IndexPage extends Component {
 }
 
 export default IndexPage
-
-
-    // this.setState(prevState => (
-    //   {
-    //     ...prevState,
-    //     [project]: {
-    //       ...prevState[`${project}`],
-    //       hover: true
-    //     }
-    //   }
-    // ), console.log("this.state: ", this.state))
-
-
-//  bollandbranch: {
-//       title: "Boll & Branch",
-//       href: "https://www.bollandbranch.com",
-//       img: bb,
-//       hover: false,
-
-//     },
-//     tenpastten: {
-//       title: "10 Past Ten",
-//       href: "http://www.10pastten.com",
-//       img: "",
-//       hover: false,
-
-//     },
-//     baboontothemoon:  {
-//       title: "Baboon to the Moon",
-//       href: "https://www.baboontothemoon.com",
-//       img: "",
-//       hover: false,
-//     },
-//     onthedash: {
-//       title: "On The Dash",
-//       href: "http://www.onthedash.com",
-//       img: "",
-//       hover: false,
-//     },
-//     thirtythree: {
-//       title: "33/45",
-//       href: "https://thirtythreefourtyfive.herokuapp.com",
-//       img: "",
-//       hover: false,
-//     },
-//     nightsandweekends: {
-//       title: "Nights & Weekends",
-//       href: "https://www.nightsandweekends.info",
-//       img: nw,
-//       hover: false,
-//     }
-
-
-
-
-
-// projects: [
-    //   {
-    //     title: "Boll & Branch",
-    //     href: "https://www.bollandbranch.com",
-    //     img: bb,
-    //     hover: false,
-    //   },
-    //   {
-    //     title: "10 Past Ten",
-    //     href: "http://www.10pastten.com",
-    //     img: "",
-    //     hover: false,
-    //   },
-    //   {
-    //     title: "Baboon to the Moon",
-    //     href: "https://www.baboontothemoon.com",
-    //     img: "",
-    //     hover: false,
-    //   },
-    //   {
-    //     title: "On The Dash",
-    //     href: "http://www.onthedash.com",
-    //     img: "",
-    //     hover: false,
-    //   },
-    //   {
-    //     title: "33/45",
-    //     href: "https://thirtythreefourtyfive.herokuapp.com",
-    //     img: "",
-    //     hover: false,
-    //   },
-    //   {
-    //     title: "Nights & Weekends",
-    //     href: "https://www.nightsandweekends.info",
-    //     img: nw,
-    //     hover: false,
-    //   },
-    // ],

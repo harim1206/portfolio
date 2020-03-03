@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Muli&display-swap');
+
+$tablet: 768px;
+$desktop: 1024px;
+
+
+
+.container {
+  font-family: 'Helvetica', sans-serif;
+  position: relative;
+}
+
+.site-wrapper {
+  margin: 40px 20px;
+
+  @media (min-width: $desktop) { 
+    margin: 100px 0 0 100px;
+  }
+}

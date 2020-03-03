@@ -1,0 +1,33 @@
+.main {
+  margin: 75px 0 0;
+  position: relative;
+  z-index: 5;
+  
+  @media (min-width: $tablet) { 
+    margin: 125px 0 0;
+  }
+
+  li {
+    list-style-type: none; 
+  }
+  
+  a {
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    
+    @media (min-width: $tablet) { 
+      font-size: 60px;
+      margin-bottom: 36px;
+    }
+
+    &:hover {
+      font-weight: bold;
+      
+      @media (min-width: $tablet) { 
+        font-size: 55px;
+      }
+    }
+  }
+}

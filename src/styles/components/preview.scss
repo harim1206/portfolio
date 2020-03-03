@@ -1,0 +1,33 @@
+.preview {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  margin-top: 100px;
+  padding-left: 400px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  
+  @media (min-width: $tablet) { 
+    display: flex;
+    min-height: 500px;
+    padding-left: 300px;
+  }
+
+  @media (min-width: $desktop) { 
+    padding-left: 400px;
+  }
+
+  &__image {
+    display: none;
+    max-height: 500px;
+    object-fit: cover;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+}
+
