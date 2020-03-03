@@ -15,17 +15,10 @@
       }
 
       &__sub {
+        font-size: 17px;
         line-height: 20px;
         margin-top: 10px;
         padding-left: 3px;
-
-        .title {
-          font-size: 17px;
-        }
-
-        .email {
-          font-size: 17px;
-        }
       }
     }
     
@@ -36,6 +29,25 @@
 
       @media (min-width: $tablet) { 
         display: block;
+      }
+
+      &__main {
+        visibility: hidden;
+
+        &.visible {
+          visibility: visible;
+        }
+      }
+
+      &__sub {
+        font-size: 18px;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+
+        &.visible {
+          visibility: visible;
+        }
       }
     }
   }

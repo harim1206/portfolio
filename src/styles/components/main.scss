@@ -10,6 +10,10 @@
 
   li {
     list-style-type: none; 
+    
+    @media (min-width: $tablet) { 
+      margin-bottom: 20px;
+    }
   }
   
   a {
