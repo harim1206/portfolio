@@ -1,13 +1,5 @@
 import React from "react"
 
-// const onEnter = e => {
-//   e.target.innerHTML = "web developer <br/> harim1206@gmail.com"
-// }
-
-// const onLeave = e => {
-//   e.target.innerText = "HARIM CHOI"
-// }
-
 const onHover = e => {
   const main = document.querySelector(".name__text--desktop__main")
   const sub = document.querySelector(".name__text--desktop__sub")
@@ -19,8 +11,6 @@ const onHover = e => {
     main.classList.add("visible")
     sub.classList.remove("visible")
   }
-
-  // e.type === "mouseenter" ? name.classList.add("visible") : name.classList.remove("visible") 
 }
 
 
@@ -40,6 +30,7 @@ const Name = props => {
         className="name__text name__text--desktop"
         onMouseEnter={onHover}
         onMouseLeave={onHover}
+        role="hover"
       >
         <span className="name__text--desktop__main visible">HARIM CHOI</span>
         <div className="name__text--desktop__sub">
