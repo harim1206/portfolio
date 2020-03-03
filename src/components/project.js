@@ -6,8 +6,8 @@ const Project = props => {
       <a
         href={props.href}
         data-project={props.project}
-        onMouseEnter={props.onEnter}
-        onMouseLeave={props.onLeave}
+        onMouseEnter={props.onHover}
+        onMouseLeave={props.onHover}
       >
         {props.title}
       </a>

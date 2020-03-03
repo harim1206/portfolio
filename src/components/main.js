@@ -10,8 +10,7 @@ const Main = props => {
         href={props.projects[project].href}
         title={props.projects[project].title}
         project={project}
-        onEnter={props.onEnter}
-        onLeave={props.onLeave}
+        onHover={props.onHover}
       />
     )
   }

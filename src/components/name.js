@@ -16,10 +16,16 @@ const Name = props => {
         className="name__text name__text--desktop"
         onMouseEnter={onEnter}
         onMouseLeave={onLeave}
-      >HARIM CHOI</div>
+      >
+        HARIM CHOI
+      </div>
+
       <div className="name__text name__text--mobile">
         HARIM CHOI <br/>
-        <span>harim1206@gmail.com</span>
+        <div className="name__text--mobile__sub">
+          <span class="title">Web Developer</span><br/>
+          <span class="email">harim1206@gmail.com</span>
+        </div>
       </div>
     </div>
   )

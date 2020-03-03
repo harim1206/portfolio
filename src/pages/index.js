@@ -56,16 +56,12 @@ class IndexPage extends Component {
 
   }
 
-  onEnter = e => {
+  onHover = e => {
     const project = e.target.getAttribute("data-project")
-    const previewImg = document.querySelector(".preview__image")
-    previewImg.setAttribute("src", this.state[`${project}`].img)
+    const previewImg = document.querySelector(`img[data-project='${project}']`)
 
-  }
-
-  onLeave = e => {
-    const previewImg = document.querySelector(".preview__image")
-    previewImg.setAttribute("src", "")
+    e.type === "mouseenter" ? previewImg.classList.add("visible") : previewImg.classList.remove("visible")
+    
   }
 
   render() {
@@ -77,11 +73,10 @@ class IndexPage extends Component {
 
           <Main
             projects={this.state}
-            onEnter={this.onEnter}
-            onLeave={this.onLeave}
+            onHover={this.onHover}
           />
 
-          <Preview />
+          <Preview projects={this.state}/>
 
         </div>
       </Layout>

@@ -11,33 +11,46 @@ $desktop: 1024px;
 
     &__text {
       cursor: pointer;
-      font-size: 24px;
-      font-weight: bold;
-
-      &--desktop {
-        display: none;
-
-        @media (min-width: $tablet) { 
-          display: block;
-        }
-      }
-
+      
       &--mobile {
         display: block;
-
+        font-size: 24px;
+        line-height: 30px;
+        
         @media (min-width: $tablet) { 
           display: none;
         }
 
-        span {
+        &__sub {
+          line-height: 15px;
           margin-top: 10px;
+          padding-left: 3px;
+
+          .title {
+            font-size: 17px;
+          }
+
+          .email {
+            font-size: 14px;
+          }
+        }
+        
+      }
+      
+      &--desktop {
+        display: none;
+        font-weight: bold;
+        font-size: 24px;
+
+        @media (min-width: $tablet) { 
+          display: block;
         }
       }
     }
   }
 
   .main {
-    margin: 100px 0 0;
+    margin: 75px 0 0;
     position: relative;
     z-index: 5;
     
@@ -50,24 +63,25 @@ $desktop: 1024px;
     }
 
     li {
-      font-size: 30px;
       list-style-type: none;
-      margin-bottom: 30px;
+      
+    }
+    
+    a {
+      color: black;
+      font-size: 40px;
+      line-height: 40px;
+      // margin-bottom: 30px;
+      text-decoration: none;
       
       @media (min-width: $tablet) { 
         font-size: 60px;
         margin-bottom: 36px;
       }
-    }
 
-    a {
-      color: black;
-      text-decoration: none;
-      
       &:hover {
-        font-size: 30px;
         font-weight: bold;
-
+        
         @media (min-width: $tablet) { 
           font-size: 55px;
         }
@@ -97,8 +111,13 @@ $desktop: 1024px;
     }
 
     &__image {
+      display: none;
       max-height: 500px;
       object-fit: cover;
+
+      &.visible {
+        display: block;
+      }
     }
 
   }
