@@ -16,7 +16,7 @@ export default {
   },
   tenpastten: {
     title: "10 Past Ten",
-    href: "http://www.10pastten.com",
+    href: "https://dev-10pastten.pantheonsite.io",
     img: ttImg,
   },
   baboontothemoon:  {
