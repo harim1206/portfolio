@@ -5,19 +5,20 @@ import {
   otdImg,
   ttffImg,
   nwGif,
-  harimImg
+  harimImg,
+  vaImg
 } from './images'
 
 export default {
-    bollandbranch: {
+  vitamina: {
+    title: "Vitamin A",
+    href: "https://www.vitaminaswim.com",
+    img: vaImg,
+  },
+  bollandbranch: {
     title: "Boll & Branch",
     href: "https://www.bollandbranch.com",
     img: bbImg,
-  },
-  tenpastten: {
-    title: "10 Past Ten",
-    href: "https://dev-10pastten.pantheonsite.io",
-    img: ttImg,
   },
   baboontothemoon:  {
     title: "Baboon to the Moon",
