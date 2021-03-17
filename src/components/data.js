@@ -1,15 +1,19 @@
-import {
-  bbImg,
-  ttImg,
-  bttmImg,
-  otdImg,
-  ttffImg,
-  nwGif,
-  harimImg,
-  vaImg
-} from './images'
+import bbImg from '../images/bollbranch.png'
+import vaImg from '../images/VA.png'
+import ttImg from '../images/tenpastten.png'
+import bttmImg from '../images/baboontothemoon.png'
+import otdImg from '../images/onthedash.png'
+import ttffImg from '../images/thirtythreefourtyfive.png'
+import nwGif from '../images/nw.gif'
+import harimImg from '../images/harim.png'
+import paradeImg from '../images/parade.png'
 
 export default {
+  parade: {
+    title: "Parade",
+    href: "https://www.yourparade.com",
+    img: paradeImg,
+  },
   vitamina: {
     title: "Vitamin A",
     href: "https://www.vitaminaswim.com",
@@ -34,11 +38,6 @@ export default {
     title: "33/45",
     href: "https://thirtythreefourtyfive.herokuapp.com",
     img: ttffImg,
-  },
-  nightsandweekends: {
-    title: "Nights & Weekends",
-    href: "https://www.nightsandweekends.info",
-    img: nwGif,
   },
   resume: {
     title: "Resume",

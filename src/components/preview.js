@@ -4,13 +4,17 @@ const Preview = props => {
   let imgArr = []
 
   for (let project in props.projects) {
+    const imgSrc = props.projects[project].img 
     imgArr.push(
-      <img 
-        className="preview__image" 
-        src={props.projects[project].img} 
+      <img
+        className="preview__image"
+        src={imgSrc}
+        alt=""
+        sizes="100vw"
         data-project={project}
-        alt="" 
-      />
+        srcset={`${imgSrc}  400w,
+                ${imgSrc}  600w,
+                ${imgSrc}  800w`}/>
     )
   }
 

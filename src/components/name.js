@@ -21,7 +21,7 @@ const Name = props => {
       <div className="name__text name__text--mobile">
         HARIM CHOI <br/>
         <div className="name__text--mobile__sub">
-          <span>Web Developer</span><br/>
+          <span>Web Developer, Parade</span><br/>
           <span>harim1206@gmail.com</span>
         </div>
       </div>
@@ -34,7 +34,7 @@ const Name = props => {
       >
         <span className="name__text--desktop__main visible">HARIM CHOI</span>
         <div className="name__text--desktop__sub">
-          <span>Web Developer</span><br/>
+          <span>Web Developer, Parade</span><br/>
           <span>harim1206@gmail.com</span>
         </div>
       </div>
